@@ -1,0 +1,81 @@
+// Open Sans Google pack
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&display=swap');
+
+// Playfair Display Google pack
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
+
+html {
+  // Define the size of 1rem
+  font-size: 100%; //1 rem = 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: $exp-default-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 800;
+}
+
+h1.heading-primary {
+  font-size: 4rem;
+  line-height: 4.375rem;
+  margin-bottom: $gutter-horizontal-small;
+
+  @include respond(XS) {
+    font-size: 2.875rem;
+    line-height: 3.4375rem;
+  }
+}
+
+h2.heading-secondary {
+  font-size: 3.625rem;
+  line-height: 4.375rem;
+  margin-bottom: 1.25rem;
+
+  &.regular {
+    font-weight: normal;
+    margin-bottom: $gutter-horizontal-x-small;
+  }
+
+  @include respond(XS) {
+    font-size: 2.875rem;
+    line-height: 3.4375rem;
+  }
+}
+
+h3.heading-tertiary {
+  font-size: 1.75rem;
+  line-height: 2.0625rem;
+}
+
+p {
+  &.subheader {
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    max-width: 75%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+
+    @include respond(XS) {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      max-width: 100%;
+    }
+  }
+}
+
+[class^="logo"] {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  @include linkReset;
+
+  &[class$="-light"] {
+    color: $exp-white;
+  }
+}
