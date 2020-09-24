@@ -1,0 +1,12 @@
+.feature {
+
+  @include respond(S) {
+    &:not(:last-child) {
+      margin-bottom: $gutter-horizontal-large;
+    }
+  }
+
+  .body-text {
+    margin-top: $gutter-horizontal-small;
+  }
+}

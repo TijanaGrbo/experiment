@@ -1,0 +1,17 @@
+.card {
+  padding-bottom: $gutter-horizontal-large;
+
+  .heading-tertiary {
+    margin: $gutter-horizontal-small 0;
+  }
+
+  [class^="divider-"] {
+    width: 6.25rem;
+    height: .25rem;
+    margin-top: .625rem;
+  }
+
+  [class^="details-shape"] {
+    margin-bottom: $gutter-horizontal-small;
+  }
+}

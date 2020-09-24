@@ -1,0 +1,31 @@
+[class^="divider-"] {
+  margin-top: .625rem;
+  width: 6.25rem;
+  height: .25rem;
+
+  &[class$="-primary-orange"] {
+    background-color: $exp-primary-orange;
+  }
+
+  &[class$="-accent-burnt-orange"] {
+    background-color: $exp-accent-burnt-orange;
+  }
+
+  &[class$="-primary-green"] {
+    background-color: $exp-primary-green;
+  }
+
+  &[class$="-accent-peach"] {
+    background-color: $exp-accent-peach;
+  }
+
+  &[class$="-accent-brick-red"] {
+    background-color: $exp-accent-brick-red;
+  }
+}
+
+.section-divider {
+  height: .25rem;
+  margin: 0 1.5rem;
+  background-color: $exp-background-sand-dark;
+}
