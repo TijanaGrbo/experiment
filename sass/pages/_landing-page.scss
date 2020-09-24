@@ -1,0 +1,139 @@
+.hero-wrapper {
+  padding-top: $gutter-horizontal-large;
+  position: relative;
+
+  .hero-background {
+    @include shapePosition;
+    @include centerHorizontally;
+    min-width: 100%;
+    top: 0;
+  }
+
+  .hero {
+    height: 37.5rem;
+    position: relative;
+
+    .border-shape {
+      @include shapePosition;
+      top: -14rem;
+      left: -14.5rem;
+    }
+
+    .hero-content {
+      z-index: 1;
+    }
+
+    .hero-shape {
+      @include shapePosition;
+      top: 5rem;
+      right: 0;
+
+      @include respond(XS) {
+        right: -15rem;
+      }
+    }
+
+    .exp-btn-green {
+      position: absolute;
+      bottom: 2.5rem;
+    }
+  }
+}
+
+.details-wrapper {
+  background-color: $exp-background-sand-light;
+}
+
+[class^="features-wrapper"] {
+  position: relative;
+  background-color: $exp-background-sand-dark;
+
+  .features-shape-background {
+    @include centerHorizontally;
+    bottom: 0;
+    min-width: 100%;
+  }
+
+  .features-section {
+    position: relative;
+    z-index: 1;
+    padding: $gutter-horizontal-large 0;
+
+    .features-shape {
+      @include shapePosition;
+      top: -4rem;
+      left: -12.4rem;
+    }
+
+    .heading-secondary {
+      margin-bottom: .625rem;
+      z-index: 1;
+    }
+
+    .exp-btn-orange {
+      margin: $gutter-horizontal-large 0 0 auto;
+    }
+  }
+}
+
+.additional-services-wrapper {
+  background-color: $exp-background-sand-light;
+
+  .additional-services-section {
+    position: relative;
+    padding-bottom: $gutter-horizontal-small;
+
+    > div {
+      z-index: 1;
+    }
+
+    .exp-col-1-of-3 {
+      margin-bottom: $gutter-horizontal-large;
+    }
+
+    .services-shape {
+      @include shapePosition;
+      top: 0;
+      left: -4rem;
+    }
+
+    .heading-secondary {
+      position: relative;
+      z-index: 1;
+    }
+
+    .additional-services-item {
+      margin-bottom: $gutter-horizontal-small;
+
+      .service-header-wrapper {
+        display: flex;
+        margin-bottom: $gutter-horizontal-small;
+
+        [class^="details-shape-"] {
+          margin-right: 2.5rem;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+.security-wrapper {
+  background-color: $exp-background-sand-dark;
+
+  .security-section {
+    padding-bottom: 5rem;
+
+    .exp-col-2-of-3 {
+      position: relative;
+
+      @include respond(XS) {
+        padding: $gutter-horizontal-large 0;
+      }
+
+      .body-text {
+        margin-bottom: $gutter-horizontal-large;
+      }
+    }
+  }
+}
