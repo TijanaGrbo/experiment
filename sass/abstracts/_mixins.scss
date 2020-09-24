@@ -1,0 +1,76 @@
+// RESETS
+
+@mixin buttonReset {
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+@mixin linkReset {
+  color: $exp-black;
+  text-decoration: none;
+}
+
+// POSITIONING
+
+@mixin centerTextVertical {
+  display: flex;
+  align-items: center;
+}
+
+@mixin shapePosition {
+  position: absolute;
+  z-index: 0;
+}
+
+@mixin centerHorizontally {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+// ANIMATION
+
+@mixin easeInAnimation {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+// MEDIA QUERY MANAGER
+/*
+0 - 768px:      XS (Phone)
+768 - 1024px:    S (Tablet portrait)
+1024 - 1280px:   M (Tablet landscape)
+[1280 - 1920] is where our normal styles apply
+1920px + :      L (Big desktop)
+
+$breakpoints:
+- XS
+- S
+- M
+- L
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == XS {
+    @media only screen and (max-width: 48em) { @content };   // 768px
+  }
+  @if $breakpoint == S {
+    @media only screen and (max-width: 64em) { @content };  // 1024px
+  }
+  @if $breakpoint == M {
+    @media only screen and (max-width: 80em) { @content };  // 1280px
+  }
+  @if $breakpoint == L {
+    @media only screen and (min-width: 120em) { @content }; // 1920px
+  }
+}
