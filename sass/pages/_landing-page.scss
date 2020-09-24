@@ -57,7 +57,7 @@
   .features-section {
     position: relative;
     z-index: 1;
-    padding: $gutter-horizontal-large 0;
+    padding: $gutter-horizontal-large 0 $gutter-horizontal-x-large;
 
     .features-shape {
       @include shapePosition;
