@@ -1,0 +1,20 @@
+.dropdown-menu {
+  @include dropdownAnimation;
+  position: absolute;
+  left: 0;
+  top: 1.75rem;
+  z-index: 2;
+  opacity: 0;
+
+  &.visible {
+    opacity: 1;
+  }
+
+  [class*="-dropdown"] {
+    color: $exp-white;
+    text-decoration: none;
+    display: block;
+    margin-left: $gutter-horizontal-small;
+    padding-top: $gutter-horizontal-x-small;
+  }
+}

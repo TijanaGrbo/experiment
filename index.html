@@ -17,9 +17,21 @@
       </div>
 
       <div class="right">
-        <button class="exp-button-header" aria-label="Login">
-          More
+        <button class="exp-button-header" aria-label="Login" onclick="toggleDropdown()">
+          Info
         </button>
+
+        <div class="dropdown-menu">
+          <a href="index.html" aria-label="Navigate to home page">
+            <a class="logo-light" href="index.html" aria-label="Navigate to home page">
+              Experiment
+            </a>
+          </a>
+        </div>
+
+        <img class="login-shape"
+             src="assets/images/shapes/login-shape.png"
+             srcset="assets/images/shapes/login-shape.svg" alt="login shape"/>
       </div>
     </div>
   </header>
@@ -230,6 +242,7 @@
 
   <!--  SCRIPTS  -->
   <script src="js/fixed-header.js"></script>
+  <script src="js/dropdown-menu.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
           integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
           crossorigin="anonymous"></script>
@@ -238,6 +251,7 @@
           speed: -2
       });
   </script>
+</div>
 </body>
 
 
