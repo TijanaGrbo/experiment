@@ -10,7 +10,7 @@
   }
 
   .hero {
-    height: 37.5rem;
+    min-height: 37.5rem;
     position: relative;
 
     .border-shape {
@@ -21,6 +21,10 @@
 
     .hero-content {
       z-index: 1;
+
+      .subheader {
+        padding-bottom: 10rem;
+      }
     }
 
     .hero-shape {
