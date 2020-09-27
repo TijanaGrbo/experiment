@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="466.099" height="572.363" viewBox="0 0 466.099 572.363"><path d="M374.37,453.363C175.011,540.7-273.81-61.92,232.716,5.236S573.73,366.023,374.37,453.363Z" transform="translate(2.015 570.329) rotate(-90)" fill="none" stroke="#587e61" stroke-linecap="round" stroke-width="4" stroke-dasharray="8 16"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="372px" height="307px" viewBox="0 0 372 307" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>services-shape</title>
+    <defs>
+        <polygon id="path-1" points="154 -1.47659662e-14 308 266 0 266"></polygon>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="308" height="266" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="services-shape">
+            <use id="Rectangle" stroke="#000000" mask="url(#mask-2)" stroke-width="4" stroke-linecap="square" stroke-linejoin="bevel" stroke-dasharray="5,15" xlink:href="#path-1"></use>
+            <polygon id="Rectangle" fill="#FFDE17" points="195.5 -1.70419234e-14 372 307 19 307"></polygon>
+        </g>
+    </g>
+</svg>

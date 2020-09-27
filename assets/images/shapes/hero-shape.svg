@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="399.999" height="383.999" viewBox="0 0 399.999 383.999"><path d="M162.681,148.969C17.923,258.454,42.417,469.19,186.652,492s142-184.993,251.217-244.652S307.438,39.485,162.681,148.969Z" transform="translate(-65.536 -109.74)" fill="#d8814e"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>hero-shape</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hero-shape" transform="translate(180.000000, 180.000000) rotate(-180.000000) translate(-180.000000, -180.000000) translate(0.000000, -0.000000)">
+            <circle id="Oval" fill="#BD1E2C" cx="180" cy="180" r="180"></circle>
+            <path d="M180,360 L180,-8.52651283e-14 C80.588745,-8.52651283e-14 1.13686838e-13,80.588745 1.13686838e-13,180 C1.13686838e-13,279.411255 80.588745,360 180,360 Z" id="Oval" fill="#FFDE17"></path>
+            <polygon id="Rectangle" fill="#214099" points="1.13686838e-13 180.45 180 180 180 360 1.13686838e-13 360"></polygon>
+        </g>
+    </g>
+</svg>
