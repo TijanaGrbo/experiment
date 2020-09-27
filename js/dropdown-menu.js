@@ -1,4 +1,4 @@
-const dropdownBackground = document.querySelector('.login-shape');
+const dropdownBackground = document.querySelector('.overlay');
 const dropdownMenu = document.querySelector('.dropdown-menu');
 const dropdownToggle = document.querySelector('.dropdown-toggle');
 
@@ -19,5 +19,6 @@ function closeDropdown() {
     if (dropdownBackground.classList.contains('active')) {
         dropdownBackground.classList.remove('active');
         dropdownMenu.classList.remove('visible');
+        dropdownToggle.classList.remove('active');
     }
 }

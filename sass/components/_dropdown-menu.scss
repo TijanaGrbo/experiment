@@ -1,6 +1,6 @@
 .dropdown-toggle {
   transform: rotate(0deg);
-  background-color: $exp-white;
+  background-color: $exp-black;
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
@@ -8,16 +8,15 @@
 
   &[class$="active"] {
     transform: rotate(135deg);
-    background-color: white;
     border-radius: 0;
   }
 }
 
 .dropdown-menu {
-  @include dropdownAnimation;
+  @include headerAnimation;
   position: absolute;
   left: 0;
-  top: 1.75rem;
+  top: 30vh;
   z-index: 2;
   opacity: 0;
 
@@ -25,22 +24,13 @@
     opacity: 1;
   }
 
-  [class*="-dropdown"] {
-    color: $exp-white;
-    text-decoration: none;
-    display: block;
-    margin-left: $gutter-horizontal-small;
-    padding-top: $gutter-horizontal-x-small;
-  }
-
   .dropdown-text {
-    color: $exp-white;
-    padding-top: 4rem;
+    color: $exp-black;
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.75rem;
 
-    span {
+    &.main {
       display: block;
       padding-bottom: 2rem;
       font-size: 2.25rem;
@@ -48,5 +38,18 @@
       font-weight: 800;
       text-transform: uppercase;
     }
+  }
+}
+
+.overlay {
+  background-color: $exp-white;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: -100vh;
+  @include headerAnimation;
+
+  &.active {
+    top: 0;
   }
 }

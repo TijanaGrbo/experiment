@@ -25,22 +25,6 @@ header {
     > div {
       @include centerTextVertical;
     }
-
-    .right {
-      .login-shape {
-        @include shapePosition;
-        @include dropdownAnimation;
-        right: -2.8rem;
-        bottom: -1rem;
-        width: 8.75rem;
-
-        &.active {
-          width: 200%;
-          bottom: -25rem;
-          right: -25%;
-        }
-      }
-    }
   }
 }
 
