@@ -65,6 +65,7 @@
 
     .features-shape {
       @include shapePosition;
+      z-index: -1;
       top: -4rem;
       left: -12.4rem;
     }
@@ -97,7 +98,7 @@
 
     .services-shape {
       @include shapePosition;
-      top: 0;
+      top: 15rem;
       left: -4rem;
     }
 
